@@ -9,8 +9,8 @@ export const Hero = () => {
         <Title>LIBERA IL TUO TEMPO!</Title>
         <Line />
         <P>
-          Crea un'esperienza indimenticabile per i tuoi ospiti: affidati alla
-          nostra esperienza di host per la gestione della tua struttura
+          Crea un'esperienza indimenticabile per i tuoi ospiti. <br /> Affidati
+          alla nostra esperienza di host per la gestione della tua struttura
         </P>
         <Button>COMPILA IL FORM</Button>
         <span>Raccontaci le tue esigenze</span>

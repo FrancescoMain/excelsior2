@@ -5,11 +5,13 @@ import styled from 'styled-components'
 export const Container = styled.div`
     height: 600px;
     background-image: url(https://images.pexels.com/photos/2468773/pexels-photo-2468773.jpeg);
-
+    background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: -120px;
+    background-size: cover;
     filter: sepia(10%);
     filter: brightness(0.5); 
+
 
 `;
 
@@ -29,8 +31,15 @@ export const Title = styled.h1`
     backdrop-filter:none;
     margin-bottom: 10px;
     text-align: center;
-    @media (max-width: 768px) {
-        font-size: 40px;
+
+    @media (max-width: 1050px) {
+        margin-top: 40px;
+
+
+    }
+    @media (max-width: 600px) {
+        font-size: 30px;
+
 
     }
 `;
@@ -52,14 +61,27 @@ export const Line = styled.div`
 `;
 
 export const P = styled.p`
-    margin-top: 100px;
+    margin-top: 80px;
     font-size: 20px;
     text-shadow: 1px 1px 2px grey;
     text-align: center;
     padding: 0 20px;
+    
     @media (max-width: 768px) {
         margin-top: 40px;
         font-size: 17px;
+
+
+    }
+
+    @media (max-width: 1050px) {
+        margin-top: 40px;
+
+
+    }
+
+    @media (max-width: 600px) {
+        font-size: 13px;
 
 
     }
@@ -110,8 +132,19 @@ export const Icon = styled.div`
     }
     animation: 0.5s ease-out 0s 1 slideTopToBottom;
 
+    @media (max-width: 1050px) {
+        margin-top: 40px;
+
+
+    }
+
     @media (max-width: 768px) {
         margin-top: 60px;
+
+
+    }
+    @media (max-width: 300px) {
+        margin-top: 30px;
 
 
     }

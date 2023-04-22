@@ -28,6 +28,11 @@ export const Title = styled.h1`
     font-size: 50px;
     backdrop-filter:none;
     margin-bottom: 10px;
+    text-align: center;
+    @media (max-width: 768px) {
+        font-size: 40px;
+
+    }
 `;
 
 export const Line = styled.div`
@@ -51,6 +56,14 @@ export const P = styled.p`
     font-size: 20px;
     text-shadow: 1px 1px 2px grey;
     text-align: center;
+    padding: 0 20px;
+    @media (max-width: 768px) {
+        margin-top: 40px;
+        font-size: 17px;
+
+
+    }
+    
 
     
 `;
@@ -96,5 +109,11 @@ export const Icon = styled.div`
   
     }
     animation: 0.5s ease-out 0s 1 slideTopToBottom;
+
+    @media (max-width: 768px) {
+        margin-top: 60px;
+
+
+    }
     
 `;

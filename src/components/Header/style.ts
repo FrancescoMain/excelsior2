@@ -1,4 +1,8 @@
 import styled from 'styled-components'
+import MenuIcon from "@mui/icons-material/Menu";
+import Menu from "@mui/material/Menu";
+
+
 
 export const HeaderCont = styled.header`
     background-color: #28282a;
@@ -6,7 +10,7 @@ export const HeaderCont = styled.header`
     width: 100vw;
     position: fixed;
     top: 0;
-    z-index: 9999;
+    z-index: 2;
     color: white;
     margin: 0;
 `;
@@ -23,6 +27,9 @@ export const List = styled.ul`
     height: 100%;
     margin: 0;
     padding: 0 80px;
+    @media (max-width: 768px) {
+    padding: 0 20px;
+    }
 
 
 `;
@@ -47,6 +54,9 @@ export const Container = styled.div`
     justify-content: space-between;
     font-size: 20px;
     gap: 30px;
+    @media (max-width: 768px) {
+    display: none;
+    }
 
 
 `;
@@ -58,5 +68,30 @@ export const A = styled.a`
         color: #ff3366;
         transition: 1s;
     }
+    @media (max-width: 768px) {
+    padding: 0;
+    }
+`;
+
+export const MobileMenu = styled.div`
+    display: none;
+    @media (max-width: 768px) {
+    display: block;
+    }
+`;
+
+export const MyMenuIcon = styled(MenuIcon)`
+    color: white;
+
+`;
+export const MyButton = styled.button`
+    background-color: transparent;
+    color: white;
+    border: none;
+
+`;
+export const MyMenu = styled(Menu)`
+    z-index: 3;
+
 `;
 

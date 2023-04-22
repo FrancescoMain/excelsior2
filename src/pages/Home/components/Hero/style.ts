@@ -50,6 +50,7 @@ export const P = styled.p`
     margin-top: 100px;
     font-size: 20px;
     text-shadow: 1px 1px 2px grey;
+    text-align: center;
 
     
 `;

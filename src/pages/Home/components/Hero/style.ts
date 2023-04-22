@@ -143,7 +143,7 @@ export const Icon = styled.div`
 
 
     }
-    @media (max-width: 300px) {
+    @media (max-width: 350px) {
         margin-top: 30px;
 
 

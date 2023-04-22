@@ -11,7 +11,7 @@ function App() {
         <Header />
         <Main>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/excelsior2" element={<Home />} />
           </Routes>
         </Main>
       </Router>

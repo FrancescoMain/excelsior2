@@ -1,7 +1,15 @@
+import { useRef } from "react";
 import { Box, Button, Container, Line, P, Title, Icon } from "./style";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 export const Hero = () => {
+  const ref = useRef<any>(null);
+
+  const handleClick = () => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <Container />
@@ -14,10 +22,11 @@ export const Hero = () => {
         </P>
         <Button>COMPILA IL FORM</Button>
         <span>Raccontaci le tue esigenze</span>
-        <Icon>
+        <Icon onClick={handleClick}>
           <ArrowDownwardIcon />
         </Icon>
       </Box>
+      <div ref={ref} />
     </>
   );
 };

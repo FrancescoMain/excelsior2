@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 
-
-
 export const Container = styled.div`
-    height: 600px;
+    min-height: 600px;
     background-image: url(https://images.pexels.com/photos/2468773/pexels-photo-2468773.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -11,8 +9,13 @@ export const Container = styled.div`
     background-size: cover;
     filter: sepia(10%);
     filter: brightness(0.5); 
+    @media (max-width: 1050px) {
+        background-position-y: 0px;
+        min-height: 500px;
 
 
+
+    }
 `;
 
 export const Box = styled.div`
@@ -57,7 +60,6 @@ export const Line = styled.div`
   
     }
     animation: 1s ease-out 0s 1 slideInFromLeft;
-    
 `;
 
 export const P = styled.p`
@@ -70,24 +72,15 @@ export const P = styled.p`
     @media (max-width: 768px) {
         margin-top: 40px;
         font-size: 17px;
-
-
     }
 
     @media (max-width: 1050px) {
         margin-top: 40px;
-
-
     }
 
     @media (max-width: 600px) {
         font-size: 13px;
-
-
     }
-    
-
-    
 `;
 
 export const Button = styled.button`
@@ -101,8 +94,6 @@ export const Button = styled.button`
         background-color: #e62958;
         transition: 0.5s;
     }
-
-    
 `;
 
 export const Icon = styled.div`
@@ -134,19 +125,11 @@ export const Icon = styled.div`
 
     @media (max-width: 1050px) {
         margin-top: 40px;
-
-
     }
 
     @media (max-width: 768px) {
         margin-top: 60px;
-
-
     }
     @media (max-width: 380px) {
-        margin-top: 30px;
-
-
-    }
-    
+    } 
 `;

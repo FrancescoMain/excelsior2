@@ -1,4 +1,7 @@
+import React from "react";
 import { useNavigate } from "react-router-dom";
+
+//<----STYLED COMPONENT
 import {
   A,
   Container,
@@ -6,20 +9,23 @@ import {
   Home,
   List,
   MobileMenu,
+  MyButton,
+  MyMenu,
   MyMenuIcon,
   Nav,
   Red,
-  MyButton,
-  MyMenu,
 } from "./style";
-import Menu from "@mui/material/Menu";
+
+//<----MATERIAL UI
 import MenuItem from "@mui/material/MenuItem";
-import React from "react";
 
 export const Header = () => {
+  //<----DATA
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
+
+  //<----BUSINESS LOGIC
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   };
@@ -42,6 +48,8 @@ export const Header = () => {
               </Home>
             </li>
           </div>
+
+          {/* //<----DESKTOP MENU */}
           <Container>
             <li>
               <A
@@ -62,6 +70,7 @@ export const Header = () => {
               </A>
             </li>
           </Container>
+          {/* //<----MOBILE MENU -----> MUI COMPONENT*/}
           <MobileMenu>
             <MyButton
               id="basic-button"

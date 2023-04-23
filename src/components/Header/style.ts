@@ -2,8 +2,6 @@ import styled from 'styled-components'
 import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 
-
-
 export const HeaderCont = styled.header`
     background-color: #28282a;
     height: 100px;
@@ -30,8 +28,6 @@ export const List = styled.ul`
     @media (max-width: 768px) {
     padding: 0 20px;
     }
-
-
 `;
 
 export const Home = styled.a`
@@ -41,12 +37,10 @@ export const Home = styled.a`
         color: #ff3366;
         transition: 1s;
     }
-
 `;
 
 export const Red = styled.span`
     color: #ff3366;
-
 `;
 
 export const Container = styled.div`
@@ -57,8 +51,6 @@ export const Container = styled.div`
     @media (max-width: 768px) {
     display: none;
     }
-
-
 `;
 
 export const A = styled.a`
@@ -82,16 +74,16 @@ export const MobileMenu = styled.div`
 
 export const MyMenuIcon = styled(MenuIcon)`
     color: white;
-
 `;
+
 export const MyButton = styled.button`
     background-color: transparent;
     color: white;
     border: none;
 
 `;
+
 export const MyMenu = styled(Menu)`
     z-index: 3;
-
 `;
 

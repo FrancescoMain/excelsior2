@@ -4,7 +4,7 @@ import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 export const Hero = () => {
   return (
     <>
-      <Container></Container>
+      <Container />
       <Box>
         <Title>LIBERA IL TUO TEMPO!</Title>
         <Line />

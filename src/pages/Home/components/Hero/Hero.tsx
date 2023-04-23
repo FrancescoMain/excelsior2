@@ -22,7 +22,7 @@ export const Hero = () => {
         </P>
         <Button>COMPILA IL FORM</Button>
         <span>Raccontaci le tue esigenze</span>
-        <Icon onClick={handleClick}>
+        <Icon onClick={handleClick} onTouchStart={handleClick}>
           <ArrowDownwardIcon />
         </Icon>
       </Box>

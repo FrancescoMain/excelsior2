@@ -4,6 +4,8 @@ import { IFormInput } from "./type";
 import { Container, H1, Img, LeftBox, RightBox } from "./style";
 import { Button } from "../Home/components/Hero/style";
 import HomeIcon from "@mui/icons-material/Home";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export const Form = () => {
   //<------DATA
@@ -13,8 +15,22 @@ export const Form = () => {
     formState: { errors },
   } = useForm<IFormInput>();
 
+  let SendForm: boolean = false;
+
+  const navigate = useNavigate();
+
   //<------BUSINESS LOGIC
-  const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<IFormInput> = (data) =>
+    axios
+      .post(
+        "https://sheet.best/api/sheets/3771ab79-8944-47a3-80b3-a7376d260787",
+        data
+      )
+      .then((reponse) => {
+        console.log(reponse);
+        SendForm = true;
+        navigate("/grazie");
+      });
 
   return (
     <Img>
@@ -80,13 +96,16 @@ export const Form = () => {
               errors={errors.phone}
               register={register("phone", {
                 required: true,
+                minLength: 9,
               })}
               errorMessage={{
                 required: "Questo campo è richiesto",
+                minLength: "Inserire un numero valido",
               }}
               label="Cellulare"
               id="phone"
             />
+
             <Button>INVIA</Button>
           </form>
         </RightBox>

@@ -2,10 +2,12 @@ import styled from 'styled-components'
 
 export const Img = styled.div`
     height:calc( 100vh - 100px);
+    overflow: auto;
     background-image: url(https://raw.githubusercontent.com/FrancescoMain/excelsior2/master/public/assets/productCurvyLines.png);
     background-size: cover;
     width: 100%;
     background-color: #fff5f8;
+    margin-top: 100px;
     
 `;
 
@@ -14,6 +16,11 @@ export const Container = styled.div`
     justify-content: center;
     height: 100%;
     width: 100%;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
     
 `;
 

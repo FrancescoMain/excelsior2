@@ -22,11 +22,11 @@ export const Hero = () => {
         </P>
         <Button>COMPILA IL FORM</Button>
         <span>Raccontaci le tue esigenze</span>
+        <div ref={ref} />
         <Icon onClick={handleClick} onTouchStart={handleClick}>
           <ArrowDownwardIcon />
         </Icon>
       </Box>
-      <div ref={ref} />
     </>
   );
 };

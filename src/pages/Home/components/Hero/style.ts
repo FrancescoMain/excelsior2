@@ -49,7 +49,7 @@ export const Title = styled.h1`
 
 export const Line = styled.div`
     width: 80px;
-    border: 2px #ff3366 solid;
+    border-bottom: 4px #ff3366 solid;
     @keyframes slideInFromLeft {
   0% {
     transform: translateX(300%);

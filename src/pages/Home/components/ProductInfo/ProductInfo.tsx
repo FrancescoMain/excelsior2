@@ -2,6 +2,7 @@ import {
   ButtonContainer,
   Card,
   Container,
+  TitleContainer,
   Img,
   Subitle,
   Title,
@@ -13,7 +14,7 @@ import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import GroupsIcon from "@mui/icons-material/Groups";
 import EngineeringIcon from "@mui/icons-material/Engineering";
 import AutoGraphIcon from "@mui/icons-material/AutoGraph";
-import { Button } from "../Hero/style";
+import { Button, Line } from "../Hero/style";
 
 export const ProductInfo = () => {
   return (
@@ -56,6 +57,10 @@ export const ProductInfo = () => {
         </Wrap>
       </Img>
       <Img>
+        <TitleContainer>
+          <h1>COME FUNZIONA</h1>
+          <Line />
+        </TitleContainer>
         <Wrap>
           <Container>
             <Card>

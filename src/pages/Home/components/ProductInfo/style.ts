@@ -6,7 +6,6 @@ export const Img = styled.div`
     background-size: cover;
     width: 100%;
     background-color: #fff5f8;
-    display: flex;
     
 `;
 
@@ -77,6 +76,19 @@ export const Subitle = styled.div`
     font-size: 20px;
     color: dimgray;
     
+`;
+
+export const Wrap = styled.div`
+    
+    display: flex;
+
+`;
+
+export const ButtonContainer = styled.div`
+    
+    display: flex;
+    justify-content: center;
+
 `;
 
 

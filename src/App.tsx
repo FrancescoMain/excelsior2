@@ -3,6 +3,8 @@ import Home from "./pages/Home/Home";
 import { Header } from "./components/Header/Header";
 import "./app.css";
 import { Main } from "./style";
+import { ProductInfo } from "./pages/Home/components/ProductInfo/ProductInfo";
+import { Form } from "./pages/Form/Form";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Main>
           <Routes>
             <Route path="/excelsior2" element={<Home />} />
+            <Route path="/prodotto" element={<ProductInfo />} />
+            <Route path="/contatti" element={<Form />} />
           </Routes>
         </Main>
       </Router>

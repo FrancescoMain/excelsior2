@@ -41,7 +41,7 @@ export const Header = () => {
             <li>
               <Home
                 onClick={() => {
-                  navigate("/");
+                  navigate("/excelsior2");
                 }}
               >
                 <Red>EX</Red>CELSIOR

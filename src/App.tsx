@@ -6,6 +6,7 @@ import { Main } from "./style";
 import { ProductInfo } from "./pages/Home/components/ProductInfo/ProductInfo";
 import { Form } from "./pages/Form/Form";
 import { Ringraziamenti } from "./pages/Ringraziamenti/Ringraziamenti";
+import { Dashboard } from "./pages/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/prodotto" element={<ProductInfo />} />
             <Route path="/contatti" element={<Form />} />
             <Route path="/grazie" element={<Ringraziamenti />} />
+            <Route path="/pasqualino98" element={<Dashboard />} />
           </Routes>
         </Main>
       </Router>

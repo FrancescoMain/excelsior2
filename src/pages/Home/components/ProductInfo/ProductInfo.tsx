@@ -15,8 +15,11 @@ import GroupsIcon from "@mui/icons-material/Groups";
 import EngineeringIcon from "@mui/icons-material/Engineering";
 import AutoGraphIcon from "@mui/icons-material/AutoGraph";
 import { Button, Line } from "../Hero/style";
+import { useNavigate } from "react-router-dom";
 
 export const ProductInfo = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <Img>
@@ -98,7 +101,7 @@ export const ProductInfo = () => {
           </Container>
         </Wrap>
         <ButtonContainer>
-          <Button>COMPILA IL FORM</Button>
+          <Button onClick={() => navigate("/contatti")}>COMPILA IL FORM</Button>
         </ButtonContainer>
       </Img>
     </>

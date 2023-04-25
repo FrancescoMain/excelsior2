@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/excelsior2/static/css/main.c919161e.css",
-    "main.js": "/excelsior2/static/js/main.54cd2030.js",
+    "main.js": "/excelsior2/static/js/main.88fb8bb5.js",
     "index.html": "/excelsior2/index.html",
     "main.c919161e.css.map": "/excelsior2/static/css/main.c919161e.css.map",
-    "main.54cd2030.js.map": "/excelsior2/static/js/main.54cd2030.js.map"
+    "main.88fb8bb5.js.map": "/excelsior2/static/js/main.88fb8bb5.js.map"
   },
   "entrypoints": [
     "static/css/main.c919161e.css",
-    "static/js/main.54cd2030.js"
+    "static/js/main.88fb8bb5.js"
   ]
 }

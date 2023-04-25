@@ -6,6 +6,7 @@ import { Button } from "../Home/components/Hero/style";
 import HomeIcon from "@mui/icons-material/Home";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 export const Form = () => {
   //<------DATA
@@ -20,17 +21,23 @@ export const Form = () => {
   const navigate = useNavigate();
 
   //<------BUSINESS LOGIC
-  const onSubmit: SubmitHandler<IFormInput> = (data) =>
+
+  const onSubmit2: SubmitHandler<IFormInput> = (data) => console.log(data);
+
+  const onSubmit: SubmitHandler<IFormInput> = (data) => {
+    const dataToSend = { nome: data.nome };
+    console.log(dataToSend);
+
     axios
       .post(
-        "https://sheet.best/api/sheets/3771ab79-8944-47a3-80b3-a7376d260787",
-        data
+        `https://script.google.com/macros/s/AKfycbyE4a-z-0oUOpiAAwwoSB9iMyKKZW-y6FgGfZF8EYxfIl3l3uc2SV2DoAIff0UF89c7/exec?nome=${data.nome}&cognome=${data.cognome}&email=${data.email}&phone=${data.phone}`
       )
       .then((reponse) => {
         console.log(reponse);
         SendForm = true;
         navigate("/grazie");
       });
+  };
 
   return (
     <Img>
